@@ -8,6 +8,10 @@ public class App {
             new CodificadorVogais()
         };
 
+        CodificadorFactory fabrica = new CodificadorFactory();
+        Codificador novo = fabrica.criarCodificador(40);
+        System.out.println(novo.getNome());
+
         for (Codificador cod : codificadores) {
             System.out.println("Codificador: "+cod.getNome());
             System.out.println("Versao: "+cod.getDataCriacao());
