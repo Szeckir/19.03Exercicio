@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public interface Codificador {
     // Retorna o nome do codificador
     public String getNome();
-
+        
     // Retorna a data de imlementação do codificador (pode ser usado como versao)
     public LocalDate getDataCriacao();
 
